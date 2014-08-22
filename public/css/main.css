@@ -1,0 +1,78 @@
+body {
+	background: #f3f3f3;
+	font-family: 'Verdana', 'sans-serif';
+}
+
+.sampleClass {
+	float:none;
+}
+
+.navigation {
+	padding-left: 2%;
+	padding-right: 2%;
+	position: absolute;
+	width: 33%;
+	left: -33%;
+	background: #e2e2e2;
+	border-right: 1px solid #bcbcbc;
+	height: 100%;
+	z-index: 1000;
+}
+
+.row {
+	position: relative;
+}
+
+.container {
+	overflow: hidden;
+}
+
+.container .row, .navigation p {
+	padding-top: 10px;
+}
+
+.showmenu {
+	padding-left: 15px;
+}
+
+.navigation p {
+	padding-left: 5%;
+}
+
+
+.showmenu, .hidemenu {
+	font: bold 16px Sans-Serif;
+	color: black;
+	padding-top: 10%;
+}
+
+.showmenu:hover, .hidemenu:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.showmenu img{
+	width: 1.25em;
+}
+
+@media only screen and (max-device-width: 480px) {
+		.navigation {
+			padding-left: 2%;
+			padding-right: 2%;
+			position: absolute;
+			width: 50%;
+			left: -50%;
+			background: #e2e2e2;
+			border-right: 1px solid #bcbcbc;
+			height: 100%;
+			z-index: 1000;
+		}
+
+		.navigation p {
+			padding-left: 10%;
+		}
+
+		.sampleClass {
+			float:left;
+		}
+	}
